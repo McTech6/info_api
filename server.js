@@ -6,7 +6,7 @@ app.use(express.json())
 const PORT = 3000
 
 
-app.get('/api/info', (req,res)=>{
+app.get('/', (req,res)=>{
     const data = {
         email: "tiddingramsey@gmail.com",
         curent_date: new Date().toISOString(),
